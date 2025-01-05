@@ -1,3 +1,5 @@
+const { transform } = require('sucrase');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./*.{html,js}"],
@@ -9,6 +11,16 @@ module.exports = {
       xl: "1180px"
     },
     extend: {},
+
+    keyframes:{
+      move:{
+        "50%": {transform: "translateY(-1rem)"}
+      }
+    },
+
+    animation:{
+      movingY: "move 3s linear infinite"
+    },
     fontFamily:{
       jost:["Jost", "serif"],
       Lobster:["Lobster", "serif"]
