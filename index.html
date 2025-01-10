@@ -52,8 +52,20 @@
 
     <main>
         <!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
-        <section id="home">
+        <section id="home" class="relative">
           <div class="container">
+            <!-- blob 1 -->
+             <div class="w-64 h-64 bg-green-700 rounded-full blur-3xl -z-10 opacity-40 absolute
+              top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+
+             </div>
+             
+            <!-- blob 2-->
+             <div class="w-64 h-64 bg-green-700 rounded-full blur-3xl -z-10 opacity-40 absolute right-0 bottom-0
+              ">
+
+             </div>
+
             <div class="flex flex-col items-center gap-5 lg:flex-row">
               <!-- content -->
               <div class="w-full space-y-5 lg:w-1/2">
@@ -101,12 +113,12 @@
                   </div>
                   
                   <!-- flower -->
-                  <div class="absolute bottom-0 left-0 opacity-30 xl:bottom-12">
+                  <div class="absolute bottom-0 left-0 opacity-30 xl:bottom-12 animate-rotating">
                     <i class="ri-flower-line text-6xl text-yellow-500"></i>
                   </div>
 
                   <!-- plant -->
-                  <div class="hidden absolute -top-10 -left-5 opacity-30 lg:block">
+                  <div class="hidden absolute -top-8 -left-5 opacity-30 lg:block animate-scalingUp">
                   <i class="ri-plant-line text-6xl text-yellow-500"></i>
                   </div>
 
